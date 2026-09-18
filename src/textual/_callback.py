@@ -5,7 +5,7 @@ from functools import partial
 from inspect import isawaitable, signature
 from typing import TYPE_CHECKING, Any, Callable
 
-from textual import active_app
+from textual._context import active_app
 
 if TYPE_CHECKING:
     from textual.app import App
